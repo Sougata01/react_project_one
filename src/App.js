@@ -8,11 +8,13 @@ function App() {
     { id: 3, title: "Pen", date: new Date(2023, 2, 10), price: 1 },
     { id: 4, title: "Laptop", date: new Date(2023, 9, 17), price: 200 },
   ];
-
+  const addExpenseHandler = (enteredExpenseData)=>{
+    console.log(enteredExpenseData)
+  }
   return (
     <div>
       <h2>Let's get Started</h2>
-      <NewExpense />
+      <NewExpense onAddExpense={addExpenseHandler}/>
       <Expenses expenses={expenses} />
     </div>
   );
