@@ -7,6 +7,12 @@
   background-color: #4b4b4b;
 }
 
+.expense-item__location {
+  margin-left: 1rem;
+  color: yellow;
+  font-style: italic;
+}
+
 .expense-item__description {
   display: flex;
   flex-direction: column;
